@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">ReadUp</string>
+    <string name="fundoparaitemlista">fundoParaItemLista</string>
+    <string name="texto_1">Texto 1</string>
+    <string name="nivel_2">Nivel 2</string>
+    <string name="nivel_1">Nivel 1</string>
+    <string name="nivel_3">Nivel 3</string>
+    <string name="bannerprincipal">bannerPrincipal</string>
+    <string name="aplicativo_bolado">Aplicativo Bolado</string>
+    <string name="treine_sua_leitura_em_ingles">Treine sua leitura em Ingles</string>
+</resources>

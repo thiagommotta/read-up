@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/itemTextoCardView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        app:cardCornerRadius="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/fundoItemLista"
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:contentDescription="@string/fundoparaitemlista"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@color/purple_200" />
+
+            <TextView
+                android:id="@+id/tituloTexto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/texto_1"
+                android:textSize="24sp"
+                app:layout_constraintBottom_toBottomOf="@+id/fundoItemLista"
+                app:layout_constraintEnd_toEndOf="@+id/fundoItemLista"
+                app:layout_constraintStart_toStartOf="@+id/fundoItemLista"
+                app:layout_constraintTop_toTopOf="@+id/fundoItemLista"
+                app:layout_constraintVertical_bias="0.19999999" />
+
+            <TextView
+                android:id="@+id/textoNivel1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#5E35B1"
+                android:text="@string/nivel_1"
+                android:textColor="#D1C4E9"
+                app:layout_constraintBottom_toBottomOf="@+id/fundoItemLista"
+                app:layout_constraintEnd_toStartOf="@+id/textoNivel2"
+                app:layout_constraintStart_toStartOf="@+id/fundoItemLista"
+                app:layout_constraintTop_toTopOf="@+id/fundoItemLista"
+                app:layout_constraintVertical_bias="0.8" />
+
+            <TextView
+                android:id="@+id/textoNivel2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#5E35B1"
+                android:text="@string/nivel_2"
+                android:textColor="#D1C4E9"
+                app:layout_constraintBottom_toBottomOf="@+id/textoNivel1"
+                app:layout_constraintEnd_toEndOf="@+id/tituloTexto"
+                app:layout_constraintStart_toStartOf="@+id/tituloTexto"
+                app:layout_constraintTop_toTopOf="@+id/textoNivel1" />
+
+            <TextView
+                android:id="@+id/textoNivel3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#5E35B1"
+                android:text="@string/nivel_3"
+                android:textColor="#D1C4E9"
+                app:layout_constraintBottom_toBottomOf="@+id/textoNivel2"
+                app:layout_constraintEnd_toEndOf="@+id/fundoItemLista"
+                app:layout_constraintStart_toEndOf="@+id/textoNivel2"
+                app:layout_constraintTop_toTopOf="@+id/textoNivel2" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
